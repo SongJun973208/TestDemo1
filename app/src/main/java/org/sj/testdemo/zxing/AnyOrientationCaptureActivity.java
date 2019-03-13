@@ -8,5 +8,5 @@ import com.journeyapps.barcodescanner.CaptureActivity;
  * 很纠结
  */
 public class AnyOrientationCaptureActivity extends CaptureActivity {
-
+    private int i = 0;
 }
