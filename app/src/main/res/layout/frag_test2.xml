@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.aries.ui.view.title.TitleBarView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        app:title_actionTextColor="#000000"
+        app:title_dividerBackground="#000000"
+        app:title_dividerVisible="false"
+        app:title_leftTextColor="#000000"
+        app:title_rightTextColor="#000000"
+        app:title_statusBarLightMode="true"
+        app:title_titleMainText="抢购"
+        app:title_titleMainTextColor="#000000"
+        app:title_titleMainTextFakeBold="true"
+        app:title_titleSubTextColor="#000000"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@mipmap/bg_rush_buy_lingka_cardbg"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="pin">
+
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/stl_type_table"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:overScrollMode="never"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="snap|exitUntilCollapsed|enterAlways|enterAlwaysCollapsed"
+                app:tl_indicator_color="#FF0000"
+                app:tl_indicator_height="1.5dp"
+                app:tl_indicator_width_equal_title="true"
+                app:tl_tab_padding="10dp"
+                app:tl_tab_space_equal="true"
+                app:tl_textSelectColor="#FF0000"
+                app:tl_textUnselectColor="#000000"
+                app:tl_textsize="13sp"
+                app:tl_underline_color="#FF0000"
+                app:tl_underline_height="0.5dp"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_type_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_bright"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

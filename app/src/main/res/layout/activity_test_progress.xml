@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="50dp">
+
+        <org.sj.testdemo.zxing.ProgressBarHorizontal
+            android:id="@+id/pbh_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pbhBgColorEnd="#e2f6b2b7"
+            app:pbhBgColorStart="#e2f6b2b7"
+            app:pbhBgRadius="8dp"
+            app:pbhCoverColorEnd="#fa2533"
+            app:pbhCoverColorStart="#f4939a"
+            app:pbhCoverRadius="8dp"
+            app:pbhScaleType="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:text="剩余100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:text="20%" />
+
+    </RelativeLayout>
+
+    <org.sj.testdemo.zxing.ProgressBarHorizontal
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        app:pbhBgColorEnd="#01978a"
+        app:pbhBgColorStart="#00a2e9"
+        app:pbhBgRadius="15dp"
+        app:pbhCoverColorEnd="@color/colorAccent"
+        app:pbhCoverColorStart="@color/colorPrimary"
+        app:pbhProgress="50"
+        app:pbhScaleType="match_parent" />
+
+    <org.sj.testdemo.zxing.ProgressBarHorizontal
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        app:pbhBgColorEnd="#01978a"
+        app:pbhBgColorStart="#00a2e9"
+        app:pbhBgLbRadius="14dp"
+        app:pbhBgLtRadius="14dp"
+        app:pbhBgRbRadius="0dp"
+        app:pbhBgRtRadius="0dp"
+        app:pbhCoverColorEnd="@color/colorAccent"
+        app:pbhCoverColorStart="@color/colorPrimary"
+        app:pbhCoverLbRadius="14dp"
+        app:pbhCoverLtRadius="14dp"
+        app:pbhCoverRbRadius="0dp"
+        app:pbhCoverRtRadius="0dp"
+        app:pbhProgress="50"
+        app:pbhScaleType="match_parent" />
+
+</LinearLayout>
